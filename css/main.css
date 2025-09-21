@@ -1,6 +1,8 @@
 *,
-*::before,
-*::after {
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -35,7 +37,7 @@ body {
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
   #lyrics {
-      font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
+      font-size: 20px; /* Reduce el tamaño del texto para dispositivos más pequeños */
       margin-bottom: 530px;
       letter-spacing: 3px;
   }
@@ -118,15 +120,17 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  /* Estilos específicos para dispositivos con un ancho máximo de 600px */
-.flowers {
-      font-size: 14px;
-      margin-bottom: 35%;
+  .flowers {
+      font-size: 25px;
+      position: fixed;                /* mantiene el elemento fijo en la pantalla */
+      margin-right: 200px;                      /* centro horizontal */
+      top: 80%;                       /* un poco más abajo del medio vertical */
+      transform: scale(2.0); /* centra perfectamente */
       letter-spacing: 3px;
-      transform: scale(1.0);
+      z-index: 1;                     /* para que quede encima de otros elementos */
+  }
 }
 
-}
 
 .flower {
   position: absolute;
