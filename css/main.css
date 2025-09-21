@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
@@ -26,7 +26,7 @@ body {
   color: white;
   position: fixed;
   top: 30%;           /* centro vertical */
-  left: 5%;          /* un poco alejado del borde izquierdo */
+  left: 10%;          /* un poco alejado del borde izquierdo */
   transform: translateY(-50%); /* centra exactamente en vertical */
   z-index: 1;
   font-weight: 600;
@@ -109,7 +109,7 @@ body {
       transparent 19px,
       transparent 22px
     ),
-    linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
+    linear-gradient(90deg, rgb(245, 100, 100), rgb(240, 189, 189));
 }
 
 .flowers {
@@ -248,7 +248,7 @@ body {
   transform: translate(-50%, -100%);
   width: 8vmin;
   height: 8vmin;
-  background-color: #f9fd25;
+  background-color: #fd2525;
   /* background-color: #fd2525; */
   filter: blur(10vmin);
 }
