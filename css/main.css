@@ -123,7 +123,7 @@ body {
   .flowers {
       font-size: 25px;
       position: absolute;                /* mantiene el elemento fijo en la pantalla */
-      margin-right: 215px;                      /* centro horizontal */
+      margin-right: 210px;                      /* centro horizontal */
       top: 80%;                       /* un poco más abajo del medio vertical */
       transform: scale(2.0); /* centra perfectamente */
       letter-spacing: 3px;
