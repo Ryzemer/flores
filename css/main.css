@@ -122,8 +122,8 @@ body {
 @media only screen and (max-width: 600px) {
   .flowers {
       font-size: 25px;
-      position: fixed;                /* mantiene el elemento fijo en la pantalla */
-      margin-right: 230px;                      /* centro horizontal */
+      position: absolute;                /* mantiene el elemento fijo en la pantalla */
+      margin-right: 250px;                      /* centro horizontal */
       top: 80%;                       /* un poco más abajo del medio vertical */
       transform: scale(2.0); /* centra perfectamente */
       letter-spacing: 3px;
