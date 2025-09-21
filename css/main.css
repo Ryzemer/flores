@@ -24,8 +24,10 @@ body {
   font-size: 40px;
   font-family: "Dancing Script", cursive;
   color: white;
-  position: absolute;
-  margin-bottom: 20%;
+  position: fixed;
+  top: 30%;           /* centro vertical */
+  left: 5%;          /* un poco alejado del borde izquierdo */
+  transform: translateY(-50%); /* centra exactamente en vertical */
   z-index: 1;
   font-weight: 600;
   letter-spacing: 4px;

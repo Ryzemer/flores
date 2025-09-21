@@ -74,5 +74,47 @@ function ocultarTitulo() {
   }, 1500); // mismo tiempo que el transition
 }
 
+// Función para centrar elementos en móviles
+function centerMobileElements() {
+  const isMobile = window.innerWidth <= 600;
+  const flowers = document.querySelector('.flowers');
+  const lyrics = document.getElementById('lyrics');
+  const titulo = document.querySelector('.titulo');
+  
+  if (isMobile && flowers) {
+    // Centrar las flores
+    flowers.style.position = 'relative';
+    flowers.style.left = '0';
+    flowers.style.transform = 'scale(0.8)';
+    
+    // Ajustar posición de letras
+    if (lyrics) {
+      lyrics.style.position = 'fixed';
+      lyrics.style.bottom = '20%';
+      lyrics.style.left = '50%';
+      lyrics.style.transform = 'translateX(-50%)';
+      lyrics.style.width = '90%';
+      lyrics.style.textAlign = 'center';
+    }
+    
+    // Ajustar posición del título
+    if (titulo) {
+      titulo.style.position = 'fixed';
+      titulo.style.top = '10%';
+      titulo.style.left = '50%';
+      titulo.style.transform = 'translateX(-50%)';
+      titulo.style.width = '90%';
+      titulo.style.textAlign = 'center';
+    }
+  }
+}
+
+// Centrar elementos al cargar y redimensionar
+window.addEventListener('load', centerMobileElements);
+window.addEventListener('resize', centerMobileElements);
+window.addEventListener('orientationchange', function() {
+  setTimeout(centerMobileElements, 100);
+});
+
 // Llama a la función después de 216 segundos (216,000 milisegundos)
 setTimeout(ocultarTitulo, 3000);
